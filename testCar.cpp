@@ -6,22 +6,22 @@ using namespace std;
 
 int main()
 {
-    Car car(2018, "Honda");
+    Car honda(2018, "Civic");
     int speed;
     
-    cout << "Current speed: " << car.getSpeed() << endl;
+    cout << "Current speed: " << honda.getSpeed() << endl;
  
     for (int i = 0; i < 5; i++)
     {
-        car.accelerate(speed);
+        honda.accelerate(speed);
         cout << "Accelerating..." << endl;
-        cout << "Current speed: " << car.getSpeed() << endl;
+        cout << "Current speed: " << honda.getSpeed() << endl;
     }
 
     for (int i = 0; i < 5; i++)
     {
-        car.brake(speed);
+        honda.brake(speed);
         cout << "Braking..." << endl;
-        cout << "Current speed: " << car.getSpeed() << endl;
+        cout << "Current speed: " << honda.getSpeed() << endl;
     }
 }

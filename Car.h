@@ -19,18 +19,19 @@ class Car
                 speed = 0; 
             }
         
-        //accessor    
+        void setYearModel(int y) { yearModel =  y; }
+        void setMake(string m) { make = m; }
+        void setSpeed(int s) { speed = s; }
+        
         int getYearModel() const { return yearModel; }
         string getMake() const { return make; }
         int getSpeed() const { return speed; }
         
-        //accelerate function + 5 to speed
         void accelerate(int a)
             { speed += 5; }
-        //brake -5 from speed
+
         void brake(int b)
             { speed -= 5; }
-        
 };
 
 #endif
